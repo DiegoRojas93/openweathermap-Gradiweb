@@ -40,6 +40,8 @@ img{
 }
 
 body{
+	height: 100%;
+	width: 100%;
 	max-height: 100%;
 	max-width: 100%;
 	background-color: var(--body-color);
@@ -279,6 +281,7 @@ body{
 	align-items: center;
 	border-radius: 2rem;
 	border: 1px solid red;
+	position: relative;
 }
 
 .info__visit .image img{
@@ -289,19 +292,19 @@ body{
 .info__others{
 	display: grid;
 	grid-template-rows: calc(4rem + 28px) repeat(2, 1fr);
-	gap: 2rem
+	gap: 2rem;
 }
 
-.info__others .reviews{
+.info__others .reviews , .info__others .images{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin: 2rem;
+	margin: 2rem 1rem;
 }
 
 .users{
 	height: 100%;
-	width: 30%;
+	width: 40%;
 	border-radius: 1rem;
 	display: flex;
 	justify-content: space-between;
@@ -316,8 +319,79 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 
-.users .figure P{
+.users .figure span{
+	color: var(--color-cuaternario);
+}
+
+.users .figure img{
+	height: 100%;
+	width: auto;
+}
+
+
+.info__others .museum, .info__others .images{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	overflow: hidden;
+	border-radius: 2rem;
+	position: relative;
+}
+
+.info__others .images img{
+	height: 100%;
+}
+
+.info__others .images .box{
+	position: absolute;
+	left: 66.6%;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: var(--color-secundario);
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 90%;
+}
+
+.info__others .images .box h1{
+	color: var(--color-cuaternario);
+	font-size: 4rem;
+}
+
+.box__left {
+	width: 50%;
+	height: 30%;
+	max-width: 20rem;
+	max-height: 15rem;
+	position: absolute;
+	left: 2rem;
+	top: 2rem;
+	display: flex;
+}
+
+.box__left .icon, .box__left .text{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box__left .text{
+	flex-direction: column;
+}
+.box__left .text p{
+	color: var(--color-cuaternario);
+}
+
+.fa-map-marker-alt{
+	font-size: 3rem;
 	color: var(--color-cuaternario);
 }
