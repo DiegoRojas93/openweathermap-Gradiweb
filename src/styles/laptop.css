@@ -1,0 +1,138 @@
+body{
+	max-height: 100vh;
+	max-width: 100Vw;
+	padding: 6rem 20rem;
+}
+
+.container{
+	padding: 4rem;
+	border-radius: 2rem;
+}
+
+.main_information{
+	top: 20vh;
+	left: 22rem;
+	border-radius: 2rem;
+	width: 8vw;
+	height: 20vh;
+	width: 6vw;
+}
+
+.banner{
+	height: 50%;
+}
+
+.info{
+	height: calc(50% - 2rem);
+	width: 100%;
+	grid-template: 1fr / repeat(4, 1fr);
+	gap: 3rem;
+}
+
+.info__items{
+	min-height: 50%;
+	height: 100%;
+}
+
+.info__forecast{
+	order: 1
+}
+.info__locations{
+	order: 4;
+	position: relative;
+}
+.info__visit{
+	order: 2
+}
+.info__others{
+	order: 3
+}
+
+.info__forecast .title, .info__visit .title{
+	text-align: left;
+	margin: 0 0 2.5rem 0;
+}
+
+
+.box__day-information .day{
+	align-items: flex-start;
+	justify-content: space-evenly;
+}
+.box__day-information .day h1{
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.box__day-information .day p{
+	color: gray;
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+.box__average-temperature h1{
+	font-size: 1.5rem;
+}
+
+.info__forecast-container{
+	height: 100%;
+	/* width: 100%; */
+	max-height: calc(100% - (2.5rem + 28px));
+}
+
+.info__visit .image{
+	height: calc(100% - (2.5rem + 28px));
+	box-shadow: rgba(0, 0, 0, 0.2) 2rem 4rem 6rem 0px;
+	overflow: hidden;
+	background-image: url('../images/singopore.jpg');
+	background-position: center;
+	width: 100%;
+}
+
+.info__visit .image img{
+	display: none;
+}
+
+
+.info__others{
+	grid-template-rows: calc(2.5rem + 28px) minmax(3rem, 8rem) auto;
+	gap: 0rem;
+}
+
+.info__others .reviews{
+	text-align: left;
+	margin: 0 0 2.5rem 0;
+}
+
+.users{
+	width: 50%;
+}
+
+.info__others .reviews p{
+	color: gray;
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+.info__others .museum{
+	margin: 0 0 2.5rem 0;
+}
+
+.info__locations-container{
+	position: absolute;
+	bottom: 0;
+	height: 150%;
+}
+
+
+.box__left {
+	left: 0.5rem;
+	top: 1.5rem;
+}
+
+.box__left .text span{
+	font-size: 1rem;
+}
+
+.fa-map-marker-alt{
+	font-size: 1rem;
+}

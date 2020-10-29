@@ -1,0 +1,56 @@
+body{
+	width: 100Vw;
+	height: 250Vh;
+	max-height: 250vh;
+	max-width: 100Vw;
+	padding: 2rem;
+}
+
+.container{
+	width: calc(100% - 4rem);
+	padding: 2rem;
+}
+
+.main_information{
+	top: 10vh;
+	left: 10%;
+	height: 25vh;
+	width: 10vw;
+	display: flex;
+	flex-direction: column;
+}
+
+.main_information-icon, .main_information-temperature{
+	width: 100%;
+	height: 50%;
+}
+
+.banner{
+	height: 25%;
+	border-radius: 2rem;
+}
+
+.info{
+	height: calc(75% - 2rem);
+	width: 100%;
+	grid-template: repeat(2, calc(50% - 2rem)) / repeat(2, calc(50% - 2rem))
+}
+
+.info__items{
+	width: 100%;
+	height: 100%;
+	/* border: 1px solid red; */
+}
+
+.info__forecast{
+	order: 1
+}
+.info__locations{
+	order: 2
+}
+.info__visit{
+	order: 3
+}
+.info__others{
+	order: 4
+}

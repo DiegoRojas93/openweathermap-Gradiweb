@@ -1,0 +1,4 @@
+.info{
+	grid-template: 1fr / repeat(3, 1fr) 25rem;
+	padding-right: 5rem;
+}
